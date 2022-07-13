@@ -13,10 +13,16 @@ html {
 
 :root {
   --main:#023e8a;
-  --shadow:#03045e;
+  --shadow:rgba(102,231,200,0.69);
   --btn:#0077b6;
   --letter:#0096c7;
   --hover:#48cae4;
+  --fondo:#2b3058;
+}
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -27,8 +33,9 @@ body {
   line-height: 1.5;
   
 }
-h2{
+.hero-contenedo h2{
   font-size:2em;;
+  z-index: 2;
 }
 span{
   color :var(--letter)
@@ -49,13 +56,20 @@ span{
 .hero-nav{
    display:flex;
   justify-content:space-between;
+  position: relative;
    
 }
+.hero-contenedor{
 
+}
 .menu {
   display: flex;
   width :50%;
   justify-content: space-around;
+  position :fixed;
+  background-color: var(--main);
+  right: 0px;
+  z-index: 2;
 
 }
 .menu li {
@@ -82,8 +96,349 @@ border-radius: 10px;
   align-items: center;
 
 }
+
 .avatar {
   max-width :500px;
   max-height: 500px;
 }
+
+.main {
+  margin: 0 auto;
+  width: 80vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  gap: 2em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+
+
+.button {
+  padding: 10px 20px;
+  background-color:var(--btn);  
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+  -moz-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+  box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+}
+
+button:hover {
+  background-color: var(--hover);
+  box-shadow: var(--shadow);
+}
+
+.main img {
+  border:  7px solid (--main);
+  width: 350px;
+  height: 520px;
+  z-index: 1;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+.about img {
+  width: 100%;
+  grid-column: 1/5;
+}
+
+.about-info {
+  grid-column: 5/10;
+  padding: 3em;
+  
+}
+
+.about-info h2 {
+  font-size: 2em;
+  color: var(--letter);
+}
+
+.divider {
+  height: 4px;
+  width: 60px;
+  background-color:var(--shadow);
+  margin-top: 5px;
+  margin-bottom: 2em;
+}
+
+.about p {
+  margin-bottom: 1em;
+}
+
+.portfolio,
+.contact-section {
+  width: 100vw;
+  background-color: var(--main);
+  color: #fff;
+}
+
+.portfolio-heading {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+
+.portfolio-heading h2,
+.contact-heading h2 {
+  font-size: 2.5em;
+  color: var(--letter);
+}
+
+.portfolio .container {
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  background-color: var(--main);
+  margin: 1em;
+}
+
+.card-title {
+  padding: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+}
+.links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.links i {
+  font-size: 1.5em;
+}
+
+.contact-section {
+  padding: 3em;
+  
+}
+
+.container-contact {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.contact-section img {
+  width: 750px;
+  height: 700px;
+  bottom: 0px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-top: 2em;
+}
+.form-group textarea {
+  height: 150px;
+  padding: 1.5em;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.img-difu{
+  opacity: 0.3;
+}
+
+.form-group .input {
+  padding: 10px 20px;
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+.form-group .button {
+  padding: 10px 20px;
+  margin: 1em;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  background-color: var(--btn);
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+  padding: 2em;
+  background-color: var(--main);
+}
+
+.footer-content h2 {
+  font-size: 3em;
+}
+
+.footer-content h5 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.portfolio,
+.contact-section {
+  width: 100vw;
+  background-color: var(--main);
+  color: #fff;
+}
+
+.portfolio-heading {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5em;
+}
+
+
+.portfolio-heading h2,
+.contact-heading h2 {
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.portfolio .container {
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  background-color: var(--fondo);
+  margin: 1em;
+}
+
+.card-img {
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+}
+
+.card-title {
+  padding: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+}
+.links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.links i {
+  font-size: 1.5em;
+}
+
+.button-content {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+.project-details-button a {
+  text-decoration: none;
+  color: #191c32;
+}
+
+.contact-section {
+  padding: 3em;
+}
+
+.container-contact {
+  margin: 0 auto;
+  margin-top: 10em;
+}
+
+
+
+.contact-section img {
+  width: 750px;
+  height: 700px;
+  bottom: 0px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-top: 2em;
+}
+.form-group textarea {
+  height: 150px;
+  padding: 1.5em;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.form-group .input {
+  padding: 10px 20px;
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+  padding: 2em;
+  background-color: var(--main);
+  color:#fff;
+}
+
+.footer-content h2 {
+  font-size: 3em;
+}
+
+.footer-content h5 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+
+
+
+
 
