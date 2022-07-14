@@ -18,16 +18,16 @@
       <img src="assets/img/menu-hamburguesa.png" alt="menu">
        
     </div>
-        <nav  class ="hero-nav">
+        <nav  class ="hero-nav" id="home">
 
             <div class="logo">
                     <h2 >C<span class="style">M</span></h2>
             </div>
             <ul class="menu" id="menu">
-              <a href="#"><li>home</li></a>
-              <a href="#"><li>about me</li></a>
-              <a href="#"><li>portfolio</li></a>
-              <a href="#"><li>contact</li></a>
+              <a href="#home"><li>home</li></a>
+              <a href="#about"><li>about me</li></a>
+              <a href="#portfolio"><li>portfolio</li></a>
+              <a href="#contact"><li>contact</li></a>
             </ul>
                 
             
@@ -41,14 +41,14 @@
         <a download href="#curriculum"><button class="button">Download CV</button></a>
         
       </div>
-      <div><img  class ="avatar" src="assets/img/cruz-inicio.png" alt="Cruz Maldonado"></div>
+      <div><img  class ="avatar borrar" src="assets/img/cruz-inicio.png" alt="Cruz Maldonado"></div>
       
     
 
   </main>
   
 </div>
-  <div class="about">
+  <div class="about" id ="about">
     <img src="assets/img/cruz-fondo-azul.png" alt="cruz-fondo-azul">
 
     <div class="about-info">
@@ -60,11 +60,12 @@
       
     </div>
   </div>
-  <div class="portfolio">
+  <div class="portfolio" id="portfolio">
     <div class="portfolio-heading">
       <h2>My <span>Por</span>tfolio</h2>
       <div class="divider"></div>
     </div>
+    
     <div class="container">
       <div class="card">
         <div class="card-img">
@@ -139,13 +140,14 @@
   </div>
 
 
-   <div class="contact-section">
+   <div class="contact-section" id="contact">
     <div class="contact-heading">
       <h2>contact</h2>
       <div class="divider"></div>
     </div>
     <div class="container-contact">
-      <img src="assets/img/cruz-inicio.png" class= "img-difu"alt="cruz-opaco">
+      <div><img src="assets/img/cruz-inicio.png" class= "img-difu"alt="cruz-opaco"></div>
+      
       <div class="contact-form">
         <h4>Send me a message...</h4>
         <form class="form-group">
@@ -169,9 +171,10 @@
       <h5>full stack developer</h5>
     </div>
     <div class="sotial-networks">
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-linkedin"></i>
-      <i class="fab fa-twitter-square"></i> 
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-twitter-square"></i> </a>
+      <a href="#"><i class="fab fa-github"></i></a>
   </footer> 
   <script src="assets/main.js"></script>
 </body>

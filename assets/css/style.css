@@ -2,7 +2,7 @@
 
 html {
   font-size: 16px;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   box-sizing: border-box;
   scroll-behavior: smooth;
   
@@ -10,6 +10,9 @@ html {
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+a{
+  color:#fff;
 }
 
 :root {
@@ -220,7 +223,6 @@ button:hover {
   height: 80vh;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
