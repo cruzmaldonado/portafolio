@@ -33,13 +33,14 @@ img {
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
-  padding: 0;
   font-size: 1rem;
   line-height: 1.5;
   background-color: var(--main);
+ 
   
   
 }
+
 .logo{
   position: absolute;
   z-index: 3;
@@ -55,16 +56,10 @@ body {
   position :fixed;
 }
 
-.hero-contenedo h2{
-  font-size:2em;;
-  
-}
 span{
   color :var(--letter)
 }
-.hero-contenedor h2{
-  margin-top: 5px;
-}
+
 
 
 .wrapper {
@@ -81,7 +76,8 @@ p{
   width :100vw;
   flex-direction: column;
   align-items: center;
-  position :fixed;
+  position:fixed;
+  margin:0;
   background-color: var(--main);
   
   z-index: 2;
